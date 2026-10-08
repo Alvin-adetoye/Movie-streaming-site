@@ -289,6 +289,7 @@ main {
 
 .genre-card1-float img:nth-child(1) {
   width: 150px;
+  height: 250px;
   object-fit: cover;
   left: 30%;
   transform: translateY(70px);
@@ -302,6 +303,7 @@ main {
 
 .genre-card1-float img:nth-child(2) {
   width: 150px;
+  height: 250px;
   object-fit: cover;
   left: 15%;
   transform: translateY(55px) rotate(-32deg);
@@ -310,13 +312,173 @@ main {
 }
 
 .genre-card1-float img:nth-child(2):hover {
-  transform: translateX(-5px) rotate(-32deg);
+  transform: translateX(-1px) rotate(-32deg);
 }
 
 .genre-card1-float img:nth-child(3) {
   width: 150px;
+  height: 250px;
   object-fit: cover;
   left: 47%;
   transform: translateY(53px) rotate(32deg);
   border-radius: 20px;
+}
+
+.genre-card1-float img:nth-child(3):hover {
+  transform: translateX(-1px) rotate(32deg);
+}
+
+
+.new-release {
+  display: flex;
+  flex-direction: column;
+}
+
+.movie-cards {
+  display: grid;
+  grid-auto-columns: max-content;
+  grid-auto-flow: column;
+  overflow-x: auto;
+  scrollbar-width: none;
+  gap: 30px;
+}
+
+.movie-card1 {
+  /* width: ; */
+  position: relative;
+  width: 300px;
+  height: 320px;
+  transition: width 0.4s ease;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.movie-card1:hover {
+  width: 500px;
+}
+
+.movie-card1:hover .poster {
+  opacity: 0;
+  transform: translateX(-300px);
+}
+
+.poster {
+  width: 300px;
+  height: 320px;
+  object-fit: cover;
+  transition: transform 0.8s ease, opacity 0.8s ease;
+  position: relative;
+  z-index: 3;
+  border-radius: 15px;
+}
+
+.movie-card1:hover .backdrop {
+  opacity: 1;
+  transform: translateX(0);
+  /* animation: appear 0.5s ease forwards; */
+}
+
+.movie-card1:hover .backdrop-text {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+
+.backdrop {
+  position: absolute;
+  width: 500px;
+  height: 320px;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  object-fit: cover;
+  transform: translateX(-500px);
+  transition: transform 0.8s ease, opacity 0.8s ease;
+  z-index: 1;
+}
+
+.backdrop img {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+
+.backdrop-text {
+  position: absolute;
+  z-index: 2;
+  top: 40%;
+  left: 3%;
+  transform: translateX(-500px);
+  transition: transform 0.8s ease, opacity 0.8s ease;
+}
+
+.backdrop-ratings {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  margin-top: 10px;
+  /* flex-direction: column; */
+}
+
+.backdrop-text h3{
+  font-size: 36px;
+  color: rgb(255, 248, 234);
+  font-weight: 400;
+}
+
+.backdrop-text p {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.star,
+.movie-t,
+.PGG {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.backdrop-ratings-link {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.backdrop-ratings-link a:first-child {
+  display: flex;
+  text-wrap: nowrap;
+  text-decoration: none;
+  background-color: rgb(255, 182, 40);
+  font-size: 17px;
+  align-items: center;
+  color: #fff;
+  font-weight: 300;
+  padding: 3px 10px;
+  border-radius: 20px;
+  gap: 10px;
+  /* flex-direction: ; */
+}
+
+.backdrop-ratings-link img{
+  width: 17px;
+  height: 17px;
+  object-fit: cover;
+  /* display: inline-block; */
+}
+
+.backdrop-ratings-link a:last-child {
+  display: flex;
+  text-wrap: nowrap;
+  text-decoration: none;
+  border: 1px solid #fff;
+  /* background-color: rgb(255, 182, 40); */
+  font-size: 17px;
+  align-items: center;
+  color: #fff;
+  font-weight: 300;
+  padding: 3px 10px;
+  border-radius: 20px;
+  gap: 10px;
 }
