@@ -254,7 +254,7 @@ main {
   display: grid;
   grid-auto-columns: 500px;
   overflow-x: auto;
-  grid-auto-flow: column;
+  grid-auto-flow: column; 
   gap: 30px;
   scrollbar-width: none;
 }
@@ -334,6 +334,13 @@ main {
   flex-direction: column;
 }
 
+.new-release h2 {
+  font-size: 38px;
+  font-weight: 500;
+  color: #ffff;
+  margin-bottom: 10px;
+}
+
 .movie-cards {
   display: grid;
   grid-auto-columns: max-content;
@@ -372,7 +379,7 @@ main {
   border-radius: 15px;
 }
 
-.movie-card1:hover .backdrop {
+.movie-card1:hover .backdrop { 
   opacity: 1;
   transform: translateX(0);
   /* animation: appear 0.5s ease forwards; */
@@ -481,4 +488,94 @@ main {
   padding: 3px 10px;
   border-radius: 20px;
   gap: 10px;
+}
+
+.top-movies-section {
+  display: flex;
+  flex-direction: column;
+  margin-top: 60px;
+}
+
+.top-movies-section h2 {
+  font-size: 38px;
+  font-weight: 500;
+  color: #ffff;
+  margin-bottom: 50px;
+}
+
+.top-movies-float {
+  display: grid;
+  grid-auto-columns: max-content;
+  grid-auto-flow: column;
+  overflow-x: auto;
+  scrollbar-width: none;
+  gap: 50px;
+}
+
+.top-movies-card {
+  position: relative;
+  /* border: 2px solid blue; */
+  height: 305px;
+  width: 395px;
+  transition: width 0.5s ease;
+}
+
+.top-movies-card:hover {
+  width: 595px;
+}
+
+.top-movies-float p {
+  font-size: 200px;
+  font-weight: 700;
+  color: transparent;
+  -webkit-text-stroke: 3px #FFF8EA;
+  position: absolute;
+  z-index: 2;
+  /* border: 3px solid #FFF8EA */
+}
+
+.yellow-background  {
+  position: absolute;
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  background: #FFB628;
+  top: 10%;
+  left: 0;
+  z-index: 1;
+}
+
+.top-movies-card-img-poster {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  position: absolute;
+  top: 10%;
+  transform: translateY(-30px);
+  left:90px;
+  border-radius: 15px;
+  z-index: 2;
+}
+
+.top-movies-backdrop {
+  position: absolute;
+  width: 500px;
+  height: 300px;
+  top: 0;
+  left: 90px;
+  opacity: 0;
+  object-fit: cover;
+  z-index: 2;
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.top-movies-backdrop img {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+
+.top-movies-card:hover .top-movies-backdrop {
+  opacity: 1;
+  transform: translateX(0);
 }
