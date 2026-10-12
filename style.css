@@ -57,6 +57,15 @@ nav h3 {
   text-decoration: none;
   font-size: 16px;
   color: #ffff;
+  transition: text-decoration 0.3s ease;
+}
+
+.nav-middle a:nth-child(2):hover,
+.nav-middle a:nth-child(3):hover,
+.nav-middle a:nth-child(4):hover,
+.nav-middle a:nth-child(5):hover,
+.nav-middle a:nth-child(6):hover {
+  text-decoration: underline 2px solid  #FFB628;
 }
 
 .search-bar {
@@ -101,6 +110,11 @@ nav h3 {
   background-color: #FFB628;
   padding: 15px 37px;
   border-radius: 25px;
+  transition: background-color 0.5s ease;
+}
+
+.nav-right:hover {
+  background-color: #f5ba44;
 }
 
 .hero {
@@ -162,10 +176,21 @@ nav h3 {
 
 .movie-links a:first-child {
   background-color: #FFB628;
+  transition: background-color 0.5s ease;
+}
+
+.movie-links a:first-child:hover {
+  background-color: #f5ba44;
 }
 
 .movie-links a:last-child {
   border: 2px solid rgb(255, 248, 234);
+  transition: background-color 0.15s ease, border 0.15s ease;
+}
+
+.movie-links a:last-child:hover {
+  background-color: #FFB628;
+  border: 2px solid #FFB628;
 }
 
 .scroll-images {
@@ -585,7 +610,7 @@ nav h3 {
   transition: opacity 0.8s ease, transform 0.8s ease;
 }
 
-.top-movies-backdrop img {
+.top-movies-backdrop img:nth-child(1) {
   width: 100%;
   height: 100%;
   border-radius: 15px;
@@ -655,6 +680,11 @@ nav h3 {
   display: flex;
   align-items: center;
   gap: 10px;
+  transition: background-color 0.5s ease;
+}
+
+.continue:hover {
+  background-color: #e69b06;
 }
 
 .coming-soon-section {
