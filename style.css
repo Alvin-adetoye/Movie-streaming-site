@@ -9,7 +9,6 @@
 body {
   font-family: "Oswald", sans-serif;
   background-color: #0B0B0F;
-  padding: 0 20px;
 }
 
 header {
@@ -123,6 +122,8 @@ nav h3 {
 .hero {
   margin-top: 180px;
   padding-bottom: 100px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .hero-cont1 {
