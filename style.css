@@ -122,8 +122,6 @@ nav h3 {
 .hero {
   margin-top: 180px;
   padding-bottom: 100px;
-  padding-left: 30px;
-  padding-right: 30px;
 }
 
 .hero-cont1 {
@@ -132,6 +130,7 @@ nav h3 {
   flex-direction: column;
   align-items: flex-start;
   margin-bottom: 70px;
+  padding: 0 50px;
 }
 
 .hero-cont1 h2 {
