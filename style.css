@@ -29,6 +29,8 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding-top: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .nav-middle {
@@ -513,6 +515,12 @@ nav h3 {
   padding: 3px 10px;
   border-radius: 20px;
   gap: 10px;
+  transition: background-color 0.3s ease, border 0.3s ease;
+}
+
+.backdrop-ratings-link a:last-child:hover {
+  background-color: #FFB628;
+  border: 1px solid #FFB628;
 }
 
 .top-movies-section {
