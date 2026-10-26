@@ -1,0 +1,9 @@
+@media (max-width:470px) {
+  .nav-middle{
+    display: none;
+  }
+
+  nav {
+    width: auto;
+  }
+}
