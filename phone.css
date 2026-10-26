@@ -5,5 +5,15 @@
 
   nav {
     width: auto;
+    border: 2px solid red;
+  }
+
+  nav h3 {
+    font-size: 20px;
+  }
+
+  .nav-right {
+    font-size: 16px;
+    padding: 5px 10px;
   }
 }
