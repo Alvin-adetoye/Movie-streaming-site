@@ -204,7 +204,9 @@
   }
 
   .new-release h2,
-  .top-movies-section h2 {
+  .top-movies-section h2,
+  .watching-section h2,
+  .coming-soon-section h2  {
     font-size: 30px;
   }
 
@@ -234,4 +236,47 @@
     font-size: 30px;
   }
 
+  .watched-movie{
+    flex-direction: column;
+  }
+
+  .para {
+    width: 100%;
+  }
+
+  .watched-image{
+    width: 100%;
+    height: 250px;
+  }
+
+  .watched-movie-text h3{
+    font-size: 30px;
+  }
+
+  .watched-movie-text p {
+    font-size: 15px;
+  }
+
+  /* .movie-track{
+    grid-auto-columns: 270px;
+  } */
+
+  .movie-track img {
+    height: 300px;
+  }
+
+  .footer-top,
+  .footer-top-right {
+    flex-direction: column;
+  }
+
+  .footer-top{
+    padding-left: 40px;
+  }
+
+  .footer-bottom {
+    border: none;
+    text-align: center;
+    font-size: 16px;
+  }
 }
